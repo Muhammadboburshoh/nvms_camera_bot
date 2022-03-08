@@ -1,0 +1,21 @@
+{
+  "name": "nvms_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "convert-excel-to-json": "^1.7.0",
+    "dotenv": "^16.0.0",
+    "node-telegram-bot-api": "^0.56.0",
+    "node-watch": "^0.7.3",
+    "node-xlsx": "^0.21.0",
+    "pg": "^8.7.3"
+  }
+}
