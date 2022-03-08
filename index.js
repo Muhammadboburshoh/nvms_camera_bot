@@ -12,4 +12,8 @@ bot.on("contact", (message) => Controllers.ContactMessage(message, bot))
 
 Controllers.BotSendMessage(bot)
 
+app.get('/', (_, res) => {
+    res.send("OK")
+})
+
 app.listen(express_port, ()=> {console.log(`Started ${express_port}`)})
