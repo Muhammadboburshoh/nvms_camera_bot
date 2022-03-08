@@ -111,7 +111,7 @@ module.exports = {
         watch(folderPath, { recursive: true }, async (curr, prev) => {
             let fileNames = await scan(folderPath)
 
-            fs.exists(folderPath + "/" + fileNames[0], async(isExist)=>{
+            fs.exists(path.join(`${folderPath}/${fileNames[0]}`), async(isExist)=>{
                 if(isExist) {
                     const result = excelToJson({sourceFile: folderPath + "/" + fileNames[0]})
                     if(result.Sheet1) {
